@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous"> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script> -->
+    <title>webサイト制作テンプレート</title>
+  </head>
+  <body>
+    <section id="portfolio">
+      <div class="project">
+        <img src="one.jpg" alt="" class="project-image">
+        <div class="grid-overlay">
+          <button class="viewbutton" type="button" name="button">view more</button>
+        </div>
+      </div>
+
+      <div class="project">
+        <img src="two.jpg" alt="" class="project-image">
+        <div class="grid-overlay">
+          <button class="viewbutton" type="button" name="button">view more</button>
+        </div>
+      </div>
+
+      <div class="project">
+        <img src="three.jpg" alt="" class="project-image">
+        <div class="grid-overlay">
+          <button class="viewbutton" type="button" name="button">view more</button>
+        </div>
+      </div>
+
+      <div class="project">
+        <img src="four.jpg" alt="" class="project-image">
+        <div class="grid-overlay">
+          <button class="viewbutton" type="button" name="button">view more</button>
+        </div>
+      </div>
+
+      <div class="project">
+        <img src="five.jpg" alt="" class="project-image">
+        <div class="grid-overlay">
+          <button class="viewbutton" type="button" name="button">view more</button>
+        </div>
+      </div>
+
+      <div class="project">
+        <img src="six.jpg" alt="" class="project-image">
+        <div class="grid-overlay">
+          <button class="viewbutton" type="button" name="button">view more</button>
+        </div>
+      </div>
+
+      <div class="project">
+        <img src="seven.jpg" alt="" class="project-image">
+        <div class="grid-overlay">
+          <button class="viewbutton" type="button" name="button">view more</button>
+        </div>
+      </div>
+
+      <div class="project">
+        <img src="eight.jpg" alt="" class="project-image">
+        <div class="grid-overlay">
+          <button class="viewbutton" type="button" name="button">view more</button>
+        </div>
+      </div>
+
+      <div class="overlay">
+        <div class="overlay-inner">
+          <button class="close" type="button" name="button">Close X</button>
+        </div>
+      </div>
+    </section>
+
+    <script type="text/javascript">
+
+    const buttons = document.querySelectorAll('.project');
+    const overlay = document.querySelector('.overlay');
+    const overlayImage = document.querySelector('.overlay-inner img');
+
+    function open(e){
+      overlay.classList.add('open');
+      const src = e.currentTarget.querySelector('img').src;
+      overlayImage.src = src;
+    }
+
+    function close(){
+      overlay.classList.remove('open');
+    }
+      buttons.forEach(button => button.addEventListener('click', open));
+      overlay.addEventListener('click', close);
+    </script>
+  </body>
+</html>
+
+<!--
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+ -->
